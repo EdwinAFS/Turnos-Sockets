@@ -1,9 +1,7 @@
-# Notas:
+Sistema de turnos creado con Sockets.
 
-Este es un pequeño servidor de express listo para ejecutarse y servir la carpeta public en la web.
+##### Pasos para inicar server.
 
-Recuerden que deben de reconstruir los módulos de node con el comando
+1.  ejecutar el comando npm install.
 
-```
-npm install
-```
+2.  ejecutar el comando npm run dev.
