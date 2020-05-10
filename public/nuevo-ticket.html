@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuevo Ticket</title>
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="row d-flex justify-content-center">
+	<div class="container-fluid align-self-center">
+		
+		<div class="row justify-content-md-center m-5">
+			<h1 id="lblNuevoTicket">
+				Cargando...
+			</h1>
+		</div>
+
+		<div class="row justify-content-md-center m-5">
+			<button id="generateTicket" class="btn btn-success btn-lg">
+				Generar nuevo ticket
+			</button>
+		</div>
+
+	</div>
+
+<script src="socket.io/socket.io.js"></script>
+<script src="./js/libs/jquery.min.js"></script>
+<script src="./js/socket.nuevo-ticket.js"></script>
+</body>
+
+</html>

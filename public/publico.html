@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pantalla del publico</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+	<div class="container-fluid ">
+		
+		<div class="row text-center h-100 w-100 position-absolute">
+			
+			<div class="col bg-dark text-white d-flex flex-column justify-content-center align-content-center">
+				<h1 id="lblTicket1"></h1>
+				<h2 id="lblDesktop1">Esperando...</h2>
+			</div>
+			
+			<div class="col-md-3 d-flex flex-column" style="background-color: red;" >
+				
+				<div class="row h-100">
+					<div class="card w-100 text-white bg-info rounded-0">
+						<div class="card-body secundary-ticket">
+							<h4 id="lblTicket2" class="card-title">...</h4>
+							<h5 id="lblDesktop2" class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="row h-100">
+					<div class="card w-100 text-white bg-info rounded-0">
+						<div class="card-body secundary-ticket">
+							<h4 id="lblTicket3" class="card-title">...</h4>
+							<h5 id="lblDesktop3" class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row h-100">
+					<div class="card w-100 text-white bg-info rounded-0">
+						<div class="card-body secundary-ticket">
+							<h4 id="lblTicket4" class="card-title">...</h4>
+							<h5 id="lblDesktop4" class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="./js/libs/jquery.min.js"></script>
+    <script src="./js/socket.publico.js"></script>
+  </body>
+</html>

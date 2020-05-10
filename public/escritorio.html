@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Programa de Colas</title>
+	
+	<style>
+		.list{
+			max-height: 350px;
+			overflow-y:scroll;
+		}
+	</style>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body class="container mt-5">
+
+	<div class="row mb-5">
+		<div class="col text-center">
+			<h1>Escritorio # <span id="ticketNumber"></span> </h1>
+		</div>
+	</div>
+	
+	<div class="row justify-content-md-center">
+
+		<div class="col-md-4" >
+			<h4>Atendiendo a <small>....</small></h4>
+
+			<button class="btn btn-primary mt-3 mb-3">
+				Atender ticket
+			</button>
+		</div>
+
+		<div class="col-md-3 text-center" >
+			
+			<li class="nav-header list-group list-group-item-primary disabled p-3">
+				<b class="text-dark">Tickets Pendientes</b>
+			</li>
+			
+			<ul id="pendingTicketsList" class="list-group list"></ul>
+
+		</div>
+	</div>
+
+	<script src="socket.io/socket.io.js"></script>
+	<script src="./js/libs/jquery.min.js"></script>
+	<script src="./js/socket.desktop.js"></script>
+</body>
+
+</html>
